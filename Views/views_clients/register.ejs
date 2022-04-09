@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>REGISTER</h1>
+
+    <form action="/register_client" method="post">
+
+        <div>
+            <label for="nom_client">Votre nom </label>
+            <input type="text" name="nom_client" id="nom_client">
+        </div>
+
+        <div>
+            <label for="nom_client">Votre Email </label>
+            <input type="text" name="email_client" id="email_client">
+        </div>
+
+        <div>
+            <label for="nom_client">Votre mot passe </label>
+            <input type="text" name="mot_passe_client" id="mot_passe_client">
+        </div>
+
+        <div>
+            <label for="nom_client">Confirm mot de passe </label>
+            <input type="text" name="confirm_mot_passe_client" id="Confirm_mot_passe_client">
+        </div>
+
+        <div>
+            <label for="nom_client">adresse client</label>
+            <input type="text" name="adresse_client" id="adresse_client">
+        </div>
+
+        
+        <div>
+          <button type="submit">valider</button>
+        </div>
+
+        
+    </form>
+
+    <div>
+      
+            <p style="color:blue; font-weight: 700; font-size: 30px;"> 
+                <%= message %>
+            </p>
+       
+    </div>
+
+    <div>
+        <a href="/login">Login</a>
+    </div>
+    
+</body>
+</html>
